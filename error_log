@@ -1,0 +1,139 @@
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+      SELECT tr.id,
+             IF( tr.subscription_id = 0, 'none',
+                 ( SELECT sub.status
+                     FROM wp_mepr_subscriptions AS sub
+                    WHERE sub.id = tr.subscription_id
+                    LIMIT 1
+                 )
+             ) AS sub_status
+        FROM wp_mepr_transactions AS tr
+       WHERE tr.expires_at <> '0000-00-00 00:00:00'
+         AND tr.status IN ( 'confirmed', 'complete' )
+         AND DATE_ADD( tr.expires_at, INTERVAL 12 HOUR ) <= '2018-03-01 08:05:44'
+         AND DATE_ADD( DATE_ADD( tr.expires_at, INTERVAL 12 HOUR ), INTERVAL 2 DAY ) >= '2018-03-01 08:05:44'
+         AND ( SELECT ev.id
+                 FROM wp_mepr_events AS ev
+                WHERE ev.evt_id=tr.id
+                  AND ev.evt_id_type='transactions'
+                  AND (ev.event='expired' OR ev.event='transaction-expired')
+                LIMIT 1 ) IS NULL
+       ORDER BY tr.expires_at
+       made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprTransactionsCtrl->send_expired_txn_events, MeprTransaction::get_expired_txns
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+        SELECT SUM(IF(txn_type='payment' AND status='pending',1,0)) AS pending,
+               SUM(IF(txn_type='payment' AND status='failed',1,0)) AS failed,
+               SUM(IF(txn_type='payment' AND status='complete',1,0)) AS complete,
+               SUM(IF(txn_type='payment' AND status='refunded',1,0)) AS refunded,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='pending',total,0)),2) AS pending_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='failed',total,0)),2) AS failed_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='complete',total,0)),2) AS complete_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='refunded',total,0)),2) AS refunded_average_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='pending',total,0)),2) AS pending_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='failed',total,0)),2) AS failed_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='complete',total,0)),2) AS complete_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='refunded',total,0)),2) AS refunded_sum_total
+          FROM wp_mepr_transactions
+       made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::transaction_stats
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_subscriptions' doesn't exist for query 
+        SELECT SUM(IF(status='pending',1,0)) AS pending,
+               SUM(IF(status='active',1,0)) AS enabled,
+               SUM(IF(status='suspended',1,0)) AS suspended,
+               SUM(IF(status='cancelled',1,0)) AS cancelled,
+               TRUNCATE(AVG(IF(status='pending',total,0)),2) AS pending_average_total,
+               TRUNCATE(AVG(IF(status='active',total,0)),2) AS enabled_average_total,
+               TRUNCATE(AVG(IF(status='suspended',total,0)),2) AS suspended_average_total,
+               TRUNCATE(AVG(IF(status='cancelled',total,0)),2) AS cancelled_average_total,
+               TRUNCATE(SUM(IF(status='pending',total,0)),2) AS pending_sum_total,
+               TRUNCATE(SUM(IF(status='active',total,0)),2) AS enabled_sum_total,
+               TRUNCATE(SUM(IF(status='suspended',total,0)),2) AS suspended_sum_total,
+               TRUNCATE(SUM(IF(status='cancelled',total,0)),2) AS cancelled_sum_total
+          FROM wp_mepr_subscriptions
+       made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::subscription_stats
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+        SELECT SUM(IF(txn_type='payment' AND status='pending',1,0)) AS pending,
+               SUM(IF(txn_type='payment' AND status='failed',1,0)) AS failed,
+               SUM(IF(txn_type='payment' AND status='complete',1,0)) AS complete,
+               SUM(IF(txn_type='payment' AND status='refunded',1,0)) AS refunded,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='pending',total,0)),2) AS pending_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='failed',total,0)),2) AS failed_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='complete',total,0)),2) AS complete_average_total,
+               TRUNCATE(AVG(IF(txn_type='payment' AND status='refunded',total,0)),2) AS refunded_average_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='pending',total,0)),2) AS pending_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='failed',total,0)),2) AS failed_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='complete',total,0)),2) AS complete_sum_total,
+               TRUNCATE(SUM(IF(txn_type='payment' AND status='refunded',total,0)),2) AS refunded_sum_total
+          FROM wp_mepr_transactions
+      WHERE created_at >= '2018-02-22 08:05:44' made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::transaction_stats
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_subscriptions' doesn't exist for query 
+        SELECT SUM(IF(status='pending',1,0)) AS pending,
+               SUM(IF(status='active',1,0)) AS enabled,
+               SUM(IF(status='suspended',1,0)) AS suspended,
+               SUM(IF(status='cancelled',1,0)) AS cancelled,
+               TRUNCATE(AVG(IF(status='pending',total,0)),2) AS pending_average_total,
+               TRUNCATE(AVG(IF(status='active',total,0)),2) AS enabled_average_total,
+               TRUNCATE(AVG(IF(status='suspended',total,0)),2) AS suspended_average_total,
+               TRUNCATE(AVG(IF(status='cancelled',total,0)),2) AS cancelled_average_total,
+               TRUNCATE(SUM(IF(status='pending',total,0)),2) AS pending_sum_total,
+               TRUNCATE(SUM(IF(status='active',total,0)),2) AS enabled_sum_total,
+               TRUNCATE(SUM(IF(status='suspended',total,0)),2) AS suspended_sum_total,
+               TRUNCATE(SUM(IF(status='cancelled',total,0)),2) AS cancelled_sum_total
+          FROM wp_mepr_subscriptions
+      WHERE created_at >= '2018-02-22 08:05:44' made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::subscription_stats
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query SELECT COUNT(u.ID)
+                FROM wp_users AS u
+               WHERE 0 <
+                     (SELECT COUNT(tr.user_id)
+                        FROM wp_mepr_transactions AS tr
+                       WHERE tr.user_id=u.ID
+                     ) made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::get_total_members_count
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+      SELECT COUNT(DISTINCT u.ID)
+        FROM wp_mepr_transactions AS tr
+       INNER JOIN wp_users AS u
+          ON u.ID=tr.user_id
+       WHERE (tr.expires_at >= '2018-03-01 08:05:44' OR tr.expires_at IS NULL OR tr.expires_at = '0000-00-00 00:00:00')
+         AND tr.status IN ('complete', 'confirmed')
+     made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::get_active_members_count
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+      SELECT COUNT(u.ID)
+        FROM wp_users AS u
+        WHERE u.ID NOT IN
+          (SELECT tr.user_id
+            FROM wp_mepr_transactions AS tr
+            WHERE (tr.expires_at >= '2018-03-01 08:05:44' OR tr.expires_at IS NULL OR tr.expires_at = '0000-00-00 00:00:00')
+              AND tr.status IN ('complete', 'confirmed')
+          )
+          AND 0 <
+            (SELECT COUNT(tr2.user_id)
+              FROM wp_mepr_transactions AS tr2
+              WHERE tr2.user_id=u.ID
+            )
+     made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::get_inactive_members_count
+[01-Mar-2018 08:05:44 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_transactions' doesn't exist for query 
+      SELECT COUNT(*) AS famc
+        FROM ( SELECT t.user_id AS user_id,
+                      (SUM(t.amount)+SUM(t.tax_amount)) AS lv
+                 FROM wp_mepr_transactions AS t
+                WHERE t.status IN ('complete','confirmed')
+                  AND ( t.expires_at = '0000-00-00 00:00:00' OR t.expires_at >= '2018-03-01 08:05:44' )
+                GROUP BY t.user_id ) as lvsums
+       WHERE lvsums.lv <= 0
+     made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprUsageCtrl->snapshot, MeprUsage->snapshot, MeprReports::get_free_active_members_count, MeprReports::get_free_or_paid_active_members_count
+[01-Mar-2018 08:05:45 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_members' doesn't exist for query SELECT ID FROM wp_users WHERE ID NOT IN (SELECT user_id FROM wp_mepr_members) LIMIT 100 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprMembersCtrl->updater, MeprUser::update_all_member_data
+[01-Mar-2018 08:05:45 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_jobs' doesn't exist for query SELECT * FROM wp_mepr_jobs
+               WHERE status = 'pending'
+                 AND runtime <= '2018-03-01 08:05:45'
+               ORDER BY priority ASC, runtime ASC
+               LIMIT 1 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprJobs->worker, MeprJobs->next_job
+[01-Mar-2018 08:05:45 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_jobs' doesn't exist for query UPDATE wp_mepr_jobs
+                 SET status = 'pending'
+               WHERE status IN ('working','failed')
+                 AND tries <= 5
+                 AND TIMESTAMPDIFF(SECOND,lastrun,'2018-03-01 08:05:45') >= 3600 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprJobs->cleanup
+[01-Mar-2018 08:05:45 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_jobs' doesn't exist for query DELETE FROM wp_mepr_jobs
+               WHERE status = 'complete'
+                 AND TIMESTAMPDIFF(SECOND,lastrun,'2018-03-01 08:05:45') >= 172800 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprJobs->cleanup
+[01-Mar-2018 08:05:45 UTC] WordPress database error Table 'i4360503_wp1.wp_mepr_jobs' doesn't exist for query DELETE FROM wp_mepr_jobs
+               WHERE tries > 5
+                 AND TIMESTAMPDIFF(SECOND,lastrun,'2018-03-01 08:05:45') >= 172800 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, MeprJobs->cleanup
