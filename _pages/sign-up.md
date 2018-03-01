@@ -8,4 +8,4 @@ permalink: http://www.blockspection.com/sign-up/
 published: true
 post_date: 2018-03-01 05:23:27
 ---
-[ihc-register]
+[wppb-register]
