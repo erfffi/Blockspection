@@ -1,6 +1,6 @@
-<?php
-
-	define("ACTIVECAMPAIGN_URL", "");
-	define("ACTIVECAMPAIGN_API_KEY", "");
-
+<?php
+
+	define("ACTIVECAMPAIGN_URL", "");
+	define("ACTIVECAMPAIGN_API_KEY", "");
+
 ?>
