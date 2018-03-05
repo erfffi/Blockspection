@@ -1,6 +1,6 @@
 ---
 ID: 409
-post_title: Sign Up
+post_title: Registration
 author: admin
 post_excerpt: ""
 layout: page
