@@ -9,4 +9,4 @@ permalink: >
 published: true
 post_date: 2018-03-01 05:23:27
 ---
-[nm-wp-registration]
+[user_registration_form id="453"]
