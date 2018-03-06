@@ -8,7 +8,6 @@ permalink: http://dev.blockspection.com/
 published: true
 post_date: 2018-02-02 22:03:32
 ---
-
 				<a href="/ico-reviews" target="_self" itemprop="url">
 				<img src="http://dev.blockspection.com/wp-content/uploads/2017/04/services-2.jpg" alt="services-2" itemprop="image" height="1272" width="1920"  />
 				</a>
