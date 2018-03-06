@@ -5,7 +5,7 @@ author: admin
 post_excerpt: ""
 layout: post
 permalink: >
-  http://www.blockspection.com/hello-world/
+  http://dev.blockspection.com/hello-world/
 published: true
 post_date: 2018-02-02 22:03:32
 ---
