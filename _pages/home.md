@@ -8,12 +8,13 @@ permalink: http://dev.blockspection.com/
 published: true
 post_date: 2018-02-02 22:03:32
 ---
+
 				<a href="http://dev.blockspection.com/" target="_self" itemprop="url">
 				<img src="http://dev.blockspection.com/wp-content/uploads/2017/04/services-2.jpg" alt="services-2" itemprop="image" height="1272" width="1920"  />
 				</a>
 <h3><a href="http://dev.blockspection.com/" target="_self">ICO Reviews</a></h3>		
 			<p style="text-align: center;">Analyzing and reviewing ICOs based on Blockspection's team experiences and expertise in the market. These reviews are for educational purposes and should not be considered as an investment advice.</p>
-<a href="http://dev.blockspection.com/" target="_self">Learn More</a>		 
+<a href="http://dev.blockspection.com/" target="_self">LEARN MORE</a>		 
 				<a href="#" target="_self" itemprop="url">
 				<img src="http://dev.blockspection.com/wp-content/uploads/2017/04/home-2.jpg" alt="home-2" itemprop="image" height="1248" width="1920"  />
 				</a>
