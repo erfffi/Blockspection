@@ -10,4 +10,4 @@ published: true
 post_date: 2018-03-01 02:50:21
 ---
 
-	<p>[user_registration_form id="453"]</p>
+	<p style="text-align: center;">[contact-form-7 id="505" title="Contact form 1"]</p>
