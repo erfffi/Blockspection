@@ -8,6 +8,8 @@ permalink: http://dev.blockspection.com/cardstack/
 published: true
 post_date: 2018-03-08 04:49:36
 ---
+Project’s Name: Cardstack
+Website: https://cardstack.com/
 Token Name: CARD
 
 White Paper: <a href="https://cardstack.com/assets/media/cardstack-whitepaper-one-pager-v12.pdf">https://cardstack.com/assets/media/cardstack-whitepaper-one-pager-v12.pdf</a>
