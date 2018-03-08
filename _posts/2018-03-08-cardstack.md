@@ -42,4 +42,4 @@ Blockspection’s opinion: This project has a huge potential and a good use case
 
 *Keep in mind this is Blockspection’s opinion and is not a financial advice. Blockspection’s reviews are for educational purposes and nothing else.
 
-&nbsp;
+<a href="http://dev.blockspection.com/wp-content/uploads/2018/03/CARD2.jpg"><img class="alignnone size-full wp-image-527" src="http://dev.blockspection.com/wp-content/uploads/2018/03/CARD2.jpg" alt="" width="628" height="329" /></a>
