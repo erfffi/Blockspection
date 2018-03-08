@@ -9,5 +9,4 @@ permalink: >
 published: true
 post_date: 2018-03-01 02:50:21
 ---
-
 	<p style="text-align: center;">[user_registration_form id="501"]</p>
