@@ -41,3 +41,5 @@ Note: KYC and Token Sale would be conducted by Bitcoin Suisse
 Blockspection’s opinion: This project has a huge potential and a good use case for their product. With having a prototype, a good team and a useful idea, we believe Cardstack is one the best projects of Q1 2018.
 
 *Keep in mind this is Blockspection’s opinion and is not a financial advice. Blockspection’s reviews are for educational purposes and nothing else.
+
+&nbsp;
