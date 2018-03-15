@@ -1,10 +1,11 @@
 ---
 ID: 567
-post_title: ""
+post_title: Confirmation
 author: admin
 post_excerpt: ""
 layout: page
-permalink: http://dev.blockspection.com/567-2/
+permalink: >
+  http://dev.blockspection.com/confirmation/
 published: true
 post_date: 2018-03-15 07:57:01
 ---
