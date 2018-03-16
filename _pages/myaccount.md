@@ -1,11 +1,10 @@
 ---
 ID: 567
-post_title: Confirmation
+post_title: My Account
 author: admin
 post_excerpt: ""
 layout: page
-permalink: >
-  http://dev.blockspection.com/confirmation/
+permalink: http://dev.blockspection.com/myaccount/
 published: true
 post_date: 2018-03-15 07:57:01
 ---
