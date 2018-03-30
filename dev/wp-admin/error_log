@@ -1,0 +1,159 @@
+[03-Mar-2018 05:41:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-reset/wp-reset.php on line 61 and exactly 2 expected in /home/rm7bsic842ii/public_html/dev/wp-includes/wp-db.php:1222
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-reset/wp-reset.php(61): wpdb->prepare('UPDATE wp_users...')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): WPReset->admin_init('')
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/rm7bsic842ii/public_html/dev/wp-admin/admin.php(156): do_action('admin_init')
+#5 /home/rm7bsic842ii/public_html/dev/wp-admin/tools.php(10): require_once('/home/rm7bsic84...')
+#6 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-includes/wp-db.php on line 1222
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:54:40 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 09:59:32 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:29:45 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:31:15 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:32:03 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:34:48 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'type' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'title' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'data_name' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'description' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'error_message' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'required' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'class' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Illegal string offset 'width' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Warning:  Cannot assign an empty string to a string offset in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 293
+[05-Mar-2018 10:43:35 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php:299
+Stack trace:
+#0 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(286): NM_WPRegistration->save_file_meta('')
+#1 /home/rm7bsic842ii/public_html/dev/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/rm7bsic842ii/public_html/dev/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /home/rm7bsic842ii/public_html/dev/wp-admin/admin-ajax.php(97): do_action('wp_ajax_nm_wpre...')
+#4 {main}
+  thrown in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/wp-registration/classes/plugin.class.php on line 299
+[07-Mar-2018 04:39:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/rm7bsic842ii/public_html/dev/wp-content/plugins/private-content-login-redirect/private-content-login-redirect.php on line 51
+[07-Mar-2018 11:13:01 UTC] email has been successfully sent to user whose email is odesk.geeta@gmail.com
+[13-Mar-2018 00:20:34 UTC] email has been successfully sent to user whose email is veyseh@gmail.com
+[14-Mar-2018 03:53:50 UTC] email has been successfully sent to user whose email is erf.ico20@gmail.com
+[14-Mar-2018 12:01:19 UTC] email has been successfully sent to user whose email is er@gmail.com
+[15-Mar-2018 12:02:39 UTC] email has been successfully sent to user whose email is odesk.geeta@gmail.com
+[19-Mar-2018 06:56:36 UTC] PHP Fatal error:  Cannot redeclare wp_logout() (previously declared in /home/rm7bsic842ii/public_html/dev/wp-includes/pluggable.php:565) in /home/rm7bsic842ii/public_html/dev/wp-content/themes/primer/functions.php on line 575
+[19-Mar-2018 06:57:31 UTC] PHP Fatal error:  Cannot redeclare wp_logout() (previously declared in /home/rm7bsic842ii/public_html/dev/wp-includes/pluggable.php:565) in /home/rm7bsic842ii/public_html/dev/wp-content/themes/primer/functions.php on line 575
+[19-Mar-2018 06:57:45 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rm7bsic842ii/public_html/dev/wp-content/themes/primer/functions.php on line 576
