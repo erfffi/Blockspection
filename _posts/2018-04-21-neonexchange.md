@@ -27,7 +27,7 @@ post_date: 2018-04-21 02:04:55
 
 <strong>Highest Bonus:</strong> No Bonus
 
-Hard-Cap: $25,000,000
+<strong>Hard-Cap:</strong> $25,000,000
 
 <strong>Token Price:</strong> $1.00
 
