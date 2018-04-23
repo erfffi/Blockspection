@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2018-04-21 02:04:55
 ---
-<strong><a href="http://www.blockspection.com/wp-content/uploads/2018/04/NEX.png"><img class="alignnone size-full wp-image-626" src="http://www.blockspection.com/wp-content/uploads/2018/04/NEX.png" alt="" width="2120" height="878" /></a>Project’s Name:</strong> NeonExchange
+<strong>Project’s Name:</strong> NeonExchange
 
 <strong>Website:</strong> <a href="https://neonexchange.org/">https://neonexchange.org/</a>
 
@@ -43,7 +43,7 @@ post_date: 2018-04-21 02:04:55
 
 <strong>Prototype:</strong> Yes
 
-<strong>Note:</strong> Whitelist for this ICO was conducted by a lottery system. The registration for the lottery was open until Mar 30, 2018. The lottery was on Mar 31, 2018 and 25,000 individual winners of this lottery would be able to contribute maximum of $1,000 each on the first round of contribution. If anything left, the original winners of the lottery have chance to contribute up to $9,000 on the second round.
+<strong>Note:</strong> Whitelist for this ICO was conducted by a lottery system. The registration for the lottery was open until Mar 30, 2018. The lottery was on Mar 31, 2018 and 25,000 individual winners of this lottery would be able to contribute maximum of $1,000 each on the first round of contribution. If anything left, that amount would be divided by $9,000 (personal cap for the second round) and the answer is the number of people that would be able to participate in the second round of ICO. For Example, if $900,000 left from the first round; 900,000/9,000=100. Only 100 people will win the second lottery, and only those 100 people will be able to participate in the second round of ICO.
 
 <strong>Blockspection’s opinion: </strong>We think decentralized exchanges could take over the centralized exchanges volume in the crypto world in near future. Therefore, a good DEX can attract a lot of volume. NEX is not the first DEX on NEO platform and won’t be the last, but the competitive advantage of this project is the very strong team that they have. Team members have done previous projects together before (Neon Wallet) and they proved they are capable of delivering this project. Based on having a prototype, very good team, and fairly reasonable hard-cap, we believe NeonExchange would do good both in short-term and long-term.
 
